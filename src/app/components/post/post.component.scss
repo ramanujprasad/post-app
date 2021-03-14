@@ -1,0 +1,21 @@
+.post {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #0095ff;
+  border-radius: 20px;
+
+  &_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.front {
+  background: #d940ff;
+}
+.back {
+  background: #123346;
+}

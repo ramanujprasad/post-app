@@ -1,0 +1,12 @@
+<div
+  (click)="flipIt()"
+  class="post"
+  [ngClass]="{ front: hasFlipped, back: !hasFlipped }"
+>
+  <div *ngIf="hasFlipped && post?.userId" class="post_content">
+    UserId: {{ post?.userId }}
+  </div>
+  <div *ngIf="!hasFlipped && post?.id" class="post_content">
+    Id: {{ post?.id }}
+  </div>
+</div>
