@@ -38,6 +38,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Deployment and published URL
 
 Application has been deployed on below URL using gh-pages.
-[Post application link](https://ramanujprasad.github.io/post-app/posts)
+[Post application deployed link](https://ramanujprasad.github.io/post-app/posts)
 
 ![Post application](https://github.com/ramanujprasad/post-app/blob/main/src/assets/application.png)
