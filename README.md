@@ -17,8 +17,9 @@ You could also access this application with already deployed [App URL](https://r
 Angular material has been used to display the information on tiles.
 
 ## Code branches
-⋅⋅1. [main] (https://github.com/ramanujprasad/post-app/tree/main) - This branch has functionality developed without using any rxjs library.
-..2. [feature/with-rxjs] (https://github.com/ramanujprasad/post-app/tree/feature/with-rxjs) - This branch has functionality using any rxjs library especially for loading state. Behaviour Subject has been used for maintaing the state.
+* 1. [main] (https://github.com/ramanujprasad/post-app/tree/main) - This branch has functionality developed without using any rxjs library.
+
+* 2. [feature/with-rxjs] (https://github.com/ramanujprasad/post-app/tree/feature/with-rxjs) - This branch has functionality using any rxjs library especially for loading state. Behaviour Subject has been used for maintaing the state.
 
 ## Build
 
