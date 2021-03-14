@@ -1,5 +1,15 @@
-<mat-grid-list *ngIf="posts$ | async as posts" cols="10" rows="10">
-  <mat-grid-tile *ngFor="let post of posts"
-    ><app-post [post]="post" [id]="'post' + post.id"></app-post
-  ></mat-grid-tile>
-</mat-grid-list>
+<ng-container *ngIf="posts$ | async as posts">
+  <mat-grid-list
+    *ngIf="(loadingState$ | async) === 'finished'"
+    cols="10"
+    rows="10"
+  >
+    <mat-grid-tile *ngFor="let post of posts"
+      ><app-post [post]="post" [id]="'post'+post.id"></app-post
+    ></mat-grid-tile>
+  </mat-grid-list>
+</ng-container>
+<ng-container *ngIf="loadingState$ | async as loadingState"
+  ><mat-spinner *ngIf="loadingState === 'loading'"></mat-spinner
+  ><app-post-error *ngIf="loadingState === 'error'"></app-post-error>
+</ng-container>

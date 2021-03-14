@@ -7,7 +7,7 @@ describe('PostComponent', () => {
   let fixture: ComponentFixture<PostComponent>;
 
   @Component({
-    selector: 'mock-component',
+    selector: 'app-mock-component',
     template: '<app-post [post]="post"></app-post>'
   })
   class MockComponent { }

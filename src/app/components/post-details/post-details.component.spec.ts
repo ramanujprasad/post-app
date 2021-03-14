@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { Observable, of } from 'rxjs';
 import { PostDetailsComponent } from './post-details.component';
 import { PostsService } from './../../services/posts.service';
 import { iPosts } from './../../interfaces/posts';
@@ -10,21 +10,20 @@ describe('PostDetailsComponent', () => {
   let component: PostDetailsComponent;
   let fixture: ComponentFixture<PostDetailsComponent>;
   let postService: PostsService;
-  const postMock = [
-    {
-      userId: 1,
-      id: 1,
-      title: 'test',
-      body: 'test'
-    }
-  ];
+  const postMock = [{
+    userId: 1,
+    id: 1,
+    title: 'test',
+    body: 'test'
+  }];
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PostDetailsComponent],
+      declarations: [ PostDetailsComponent ],
       imports: [HttpClientTestingModule],
-      providers: [PostsService, HttpClient]
-    }).compileComponents();
+      providers: [ PostsService, HttpClient ]
+    })
+    .compileComponents();
   });
 
   beforeEach(() => {
